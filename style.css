@@ -1,0 +1,221 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 600px 600px 600px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "brand egg"
+      "cup audience"
+      "cherry tangerine";
+
+  }
+  
+  .brand { 
+      grid-area: brand; 
+      display: flex;
+      justify-content: center;
+      margin-left: 15%;
+      flex-direction: column;
+    }
+  
+  .egg { 
+      grid-area: egg; 
+      background-image: url("images/photos/image-transform.jpg") ;
+      background-size: cover;
+    }
+  
+  .cup { 
+      grid-area: cup; 
+      background-image: url("images/photos/image-stand-out.jpg");
+      background-size: cover;
+    }
+  
+  .audience { 
+      grid-area: audience;
+      display: flex;
+      justify-content: center;
+      margin-left: 15%;
+      flex-direction: column;
+     }
+  
+  .cherry { 
+      grid-area: cherry; 
+      background-image: url("images/photos/image-graphic-design.jpg");
+      background-size: cover;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+  .tangerine { 
+      grid-area: tangerine;
+      background-image: url("images/photos/image-photography.jpg");
+      background-size: cover;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+     }
+
+     .cherry p, .tangerine p {
+         margin-bottom: 10%;
+     }
+    
+ body {
+    box-sizing: border-box;
+    padding: 0px !important;
+    border: 0px !important;
+    margin: 0px !important;
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 250px;
+}
+
+section h2 {
+    margin-bottom: 65px;
+
+}
+
+.testimony {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+ .testimony img {
+     border-radius: 50%;
+     width: 100px;
+     margin: 50px;
+ }
+
+.testimony div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 150px;
+}
+
+.testimony .text {
+    margin-bottom: 50px;
+    color: grey;
+}
+
+.testimony #title {
+    color: grey;
+}
+
+.art {
+    display: flex;
+}
+.art img {
+    width: 25%;
+}
+
+header {
+    background-image: url("images/photos/image-header.jpg");
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 610px;
+    background-size: 100% 100%;
+    flex-direction: column;
+}
+
+header h1 {
+    margin-top: 150px;
+    font-size: 50px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color:#3dbeff;
+    color: white;
+}
+
+nav p,nav button {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; 
+    border-radius: 32px;
+    border: none;
+}
+
+footer{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #91d3c5;
+    flex-direction: column;
+    color: #2e7565;
+}
+
+footer .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+footer p {
+    margin-left: 15px ;
+    margin-right:15px;
+}
+
+#fraunces {
+    font-family: 'Fraunces', serif;
+}
+
+.container #fraunces {
+    color: black;
+}
+
+.yellow {
+    text-decoration: none;
+    border-bottom: 10px solid hsl(51, 100%, 49%);
+    border-bottom-right-radius : 10px;
+    border-bottom-left-radius : 10px;
+    line-height: 10px;
+    display: inline-block;
+}
+
+.red {
+    text-decoration: none;
+    border-bottom: 10px solid hsl(7, 99%, 70%);
+    border-bottom-right-radius : 10px;
+    border-bottom-left-radius : 10px;
+    line-height: 10px;
+    display: inline-block;
+}
+
+.container {
+    color: hsl(167, 40%, 24%);
+}
+
+.grey {
+    color: grey;
+}
