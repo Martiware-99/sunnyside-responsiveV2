@@ -1,317 +1,410 @@
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 600px 600px 600px;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "brand egg"
-      "cup audience"
-      "cherry tangerine";
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 600px 600px 600px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "brand egg"
+    "cup audience"
+    "cherry tangerine";
+}
 
-  }
-  
-  .brand { 
-      grid-area: brand; 
-      display: flex;
-      justify-content: center;
-      margin-left: 15%;
-      flex-direction: column;
-    }
-  
-  .egg { 
-      grid-area: egg; 
-      background-image: url("images/photos/image-transform.jpg") ;
-      background-size:cover;
-      background-repeat: no-repeat;
-      background-position-x: center;
-    }
-  
-  .cup { 
-      grid-area: cup; 
-      background-image: url("images/photos/image-stand-out.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position-x: center;
-    }
-  
-  .audience { 
-      grid-area: audience;
-      display: flex;
-      justify-content: center;
-      margin-left: 15%;
-      flex-direction: column;
-     }
-  
-  .cherry { 
-      grid-area: cherry; 
-      background-image: url("images/photos/image-graphic-design.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position-x: center;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      flex-direction: column;
-      text-align: center;
-    }
-  
-  .tangerine { 
-      grid-area: tangerine;
-      background-image: url("images/photos/image-photography.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position-x: center;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      flex-direction: column;
-      text-align: center;
-     }
+.brand {
+  grid-area: brand;
+  display: flex;
+  justify-content: center;
+  margin-left: 15%;
+  flex-direction: column;
+}
 
-     .cherry p, .tangerine p {
-         margin-bottom: 10%;
-     }
-    
- body {
-    box-sizing: border-box;
-    padding: 0px !important;
-    border: 0px !important;
-    margin: 0px !important;
-    font-family: 'Barlow', sans-serif;
-    font-size: 18px;
+.egg {
+  grid-area: egg;
+  background-image: url("images/photos/image-transform.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.cup {
+  grid-area: cup;
+  background-image: url("images/photos/image-stand-out.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.audience {
+  grid-area: audience;
+  display: flex;
+  justify-content: center;
+  margin-left: 15%;
+  flex-direction: column;
+}
+
+.cherry {
+  grid-area: cherry;
+  background-image: url("images/photos/image-graphic-design.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tangerine {
+  grid-area: tangerine;
+  background-image: url("images/photos/image-photography.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cherry p,
+.tangerine p {
+  margin-bottom: 10%;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0px !important;
+  border: 0px !important;
+  margin: 0px !important;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
 }
 
 section {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 250px;
 }
 
 section h2 {
-    margin-bottom: 65px;
-
+  margin-bottom: 65px;
 }
 
 .testimony {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 100px;
-    margin-right: 100px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
- .testimony img {
-     border-radius: 50%;
-     width: 100px;
-     margin: 50px;
- }
+.testimony img {
+  border-radius: 50%;
+  width: 100px;
+  margin: 50px;
+}
 
 .testimony div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 150px;
 }
 
 .testimony .text {
-    margin-bottom: 50px;
-    color: grey;
+  margin-bottom: 50px;
+  color: grey;
 }
 
 .testimony #title {
-    color: grey;
+  color: grey;
 }
 
 .art {
-    display: flex;
+  display: flex;
 }
 .art img {
-    width: 25%;
+  width: 25%;
 }
 
 header {
+  background-image: url("images/photos/image-header.jpg");
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 610px;
+  background-size: cover;
+  flex-direction: column;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1440px) {
+  header {
     background-image: url("images/photos/image-header.jpg");
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: 610px;
-    background-size: 100% 100%;
-    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 header h1 {
-    margin-top: 150px;
-    font-size: 50px;
-    color: white;
+  margin-top: 150px;
+  font-size: 50px;
+  color: white;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
-    background-color:#3dbeff;
-    color: white;
+li {
+  list-style: none;
 }
 
-nav p,nav button {
-    margin-left: 15px;
-    margin-right: 15px;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block; 
-    border-radius: 32px;
-    border: none;
+a {
+  text-decoration: none;
 }
 
-footer{
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #91d3c5;
+.header_bar {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #475569;
+}
+
+.nav-link:hover {
+  color: #482ff7;
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: white;
+}
+
+#active {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -107%;
+    top: 5rem;
     flex-direction: column;
-    color: #2e7565;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+footer {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #91d3c5;
+  flex-direction: column;
+  color: #2e7565;
 }
 
 footer .links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
 }
 
 footer p {
-    margin-left: 15px ;
-    margin-right:15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 #fraunces {
-    font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
 }
 
 .container #fraunces {
-    color: black;
+  color: black;
 }
 
 .yellow {
-    text-decoration: none;
-    border-bottom: 10px solid hsl(51, 100%, 49%);
-    border-bottom-right-radius : 10px;
-    border-bottom-left-radius : 10px;
-    line-height: 10px;
-    display: inline-block;
+  text-decoration: none;
+  border-bottom: 10px solid hsl(51, 100%, 49%);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  line-height: 10px;
+  display: inline-block;
 }
 
 .red {
-    text-decoration: none;
-    border-bottom: 10px solid hsl(7, 99%, 70%);
-    border-bottom-right-radius : 10px;
-    border-bottom-left-radius : 10px;
-    line-height: 10px;
-    display: inline-block;
+  text-decoration: none;
+  border-bottom: 10px solid hsl(7, 99%, 70%);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  line-height: 10px;
+  display: inline-block;
 }
 
 .container {
-    color: hsl(167, 40%, 24%);
+  color: hsl(167, 40%, 24%);
 }
 
 .grey {
-    color: grey;
+  color: grey;
 }
 
-  @media (max-width: 450px) { 
-      .container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: column;
-        grid-template-areas:
-          "brand" 
-          "egg"   
-          "audience"
-          "cup" 
-          "cherry" 
-          "tangerine";
-
-      }.brand { 
-        grid-area: brand; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        margin: 0px 5% 0px 5%;
-      }
-
-      .audience { 
-        grid-area: audience;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        box-sizing: border-box;
-        margin: 0px 5% 0px 5%;
-       }
-
-       .testimony {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .egg { 
-        grid-area: egg; 
-        background-image: url("images/photos/image-transform.jpg") ;
-        background-size:cover;
-        background-repeat: no-repeat;
-        background-position-x: center;
-      }
-    
-    .cup { 
-        grid-area: cup; 
-        background-image: url("images/photos/image-stand-out.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position-x: center;
-      }
-
-      .cherry { 
-        grid-area: cherry; 
-        background-image: url("images/photos/image-graphic-design.jpg");
-        background-size: cover;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        background-position-x: center;
-      }
-    
-    .tangerine { 
-        grid-area: tangerine;
-        background-image: url("images/photos/image-photography.jpg");
-        background-size: cover;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        background-position-x: center;
-       }
-  
-      
+@media (max-width: 450px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    grid-template-areas:
+      "brand"
+      "egg"
+      "audience"
+      "cup"
+      "cherry"
+      "tangerine";
   }
+  .brand {
+    grid-area: brand;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px 5% 0px 5%;
+  }
+
+  .audience {
+    grid-area: audience;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0px 5% 0px 5%;
+  }
+
+  .testimony {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .egg {
+    grid-area: egg;
+    background-image: url("images/photos/image-transform.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+
+  .cup {
+    grid-area: cup;
+    background-image: url("images/photos/image-stand-out.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+
+  .cherry {
+    grid-area: cherry;
+    background-image: url("images/photos/image-graphic-design.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-position-x: center;
+  }
+
+  .tangerine {
+    grid-area: tangerine;
+    background-image: url("images/photos/image-photography.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-position-x: center;
+  }
+}
