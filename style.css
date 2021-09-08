@@ -22,7 +22,7 @@
   .egg { 
       grid-area: egg; 
       background-image: url("images/photos/image-transform.jpg") ;
-      background-size: cover;
+      background-size:cover;
     }
   
   .cup { 
@@ -219,3 +219,91 @@ footer p {
 .grey {
     color: grey;
 }
+
+  @media (max-width: 450px) { 
+      .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: column;
+        grid-template-areas:
+          "brand" 
+          "egg"   
+          "audience"
+          "cup" 
+          "cherry" 
+          "tangerine";
+
+      }.brand { 
+        grid-area: brand; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0px 5% 0px 5%;
+      }
+
+      .audience { 
+        grid-area: audience;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        box-sizing: border-box;
+        margin: 0px 5% 0px 5%;
+       }
+
+       .testimony {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .egg { 
+        grid-area: egg; 
+        background-image: url("images/photos/image-transform.jpg") ;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+      }
+    
+    .cup { 
+        grid-area: cup; 
+        background-image: url("images/photos/image-stand-out.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+      }
+
+      .cherry { 
+        grid-area: cherry; 
+        background-image: url("images/photos/image-graphic-design.jpg");
+        background-size: cover;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        background-position-x: center;
+      }
+    
+    .tangerine { 
+        grid-area: tangerine;
+        background-image: url("images/photos/image-photography.jpg");
+        background-size: cover;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        background-position-x: center;
+       }
+  
+      
+  }
