@@ -23,12 +23,16 @@
       grid-area: egg; 
       background-image: url("images/photos/image-transform.jpg") ;
       background-size:cover;
+      background-repeat: no-repeat;
+      background-position-x: center;
     }
   
   .cup { 
       grid-area: cup; 
       background-image: url("images/photos/image-stand-out.jpg");
       background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: center;
     }
   
   .audience { 
@@ -43,6 +47,8 @@
       grid-area: cherry; 
       background-image: url("images/photos/image-graphic-design.jpg");
       background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: center;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -54,6 +60,8 @@
       grid-area: tangerine;
       background-image: url("images/photos/image-photography.jpg");
       background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: center;
       display: flex;
       justify-content: flex-end;
       align-items: center;
